@@ -1,0 +1,34 @@
+
+body{
+    background-image:url('images/nurse.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 29cm;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.regform{
+    width: 500px;
+    margin: 25px auto;
+    padding:10px 20px 30px;
+    background-color:rgba(0,0,0,.5);
+    color:white;
+    font-size:30px; 
+    border-radius:10px ;
+
+}
+.regform .textlabel{
+    display:block;
+}
+.regform h3{
+    text-align:center;
+    color: #E29578;;
+}
+
+.input input
+{
+    width:100%;
+    font-size: 1.5em;
+    border:1px solid #006D77;
+}

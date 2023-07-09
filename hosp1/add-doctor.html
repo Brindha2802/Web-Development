@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="addadoc.js" type="text/javascript" >
+	</script>
+ 
+
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <br>
+    <div class=regform>
+        <h3>Add a Doctor</h3>
+        <form action="welcome.html" method="POST" onsubmit="return validate()">
+            <div class="input">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <br>
+            <div class="input">
+                <label for="middle-name">Middle Name*</label>
+                <input type="text" id="middle-name" name="middle-name">
+            </div>
+            <br>
+            <div class="input"> 
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <br>
+            <div class="input">
+                <label for="registration-no">Registration No*</label>
+                <input type="text" id="registration-no" name="registration-no" required>
+            </div>
+            <br>
+            <div class="input">
+                <label for="dob">Date of Birth*</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <br>
+            <div class="radio">
+                <label>Gender</label>
+                <div>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female" required> Female
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div class="input">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div class="input">
+                <label for="specialization">Specialization</label>
+                <select id="specialization" name="specialization" required>
+                    <option value="">Select specialization</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="oncology">Oncology</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="psychiatry">Psychiatry</option>
+                    <option value="surgery">Surgery</option>
+                </select>
+            </div>
+            <br>
+            <div class="input">
+                <label for="qualification">Qualification</label>
+                <input type="text" id="qualification" name="qualification" required>
+            </div>
+            <br>
+            <div class="input">
+                <label for="contact-no">Contact Number</label>
+                <input type="text" id="contact-no" name="contact-no">
+            </div>
+            <br>
+            <div class="input">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+            </div>
+            <br>
+            <div class="input">
+            <label for="No of Patients">No of Patients</label>
+            <input type="text" id="No of Patients" name="No of Patients" required>
+            </div>
+            <br>
+            <div class="input">
+            <label for="Department No">Department No*</label>
+            <input type="text" id="Department No" name="Department No" required>
+            </div>
+            <br>
+            <div class="input">
+                <label for="Visiting time">Visiting Time</label>
+                <select id="Visiting time" name="Visiting time" required>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            </div>
+            <br>
+            <div class="input">
+                <label for="Visiting time">Visiting Days</label>
+                <select id="Visiting Days" name="Visiting Days" multiple required>
+                    <option>Mon</option>
+                    <option>Tue</option>
+                    <option>Wed</option>
+                    <option>Thurs</option>
+                    <option>Fri</option>
+                    <option>Sat</option>
+                    <option>Sun</option>
+                </select>
+            </div>
+            <br>
+            <div class="input">
+            <input type="submit" required>
+            </div>
+    </div> 
+    </form>
+    </body>
+</html>

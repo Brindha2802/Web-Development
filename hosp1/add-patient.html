@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="addapat.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="style1.css">
+    <br>
+    <div class="regform">
+        <h3>Add a Patient</h3>
+        <form action="welcome.html" onsubmit="return validate()">
+            <div class="input">
+                <label class ="textlabel" for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <br>
+            <div class="input">
+                <label class ="textlabel" for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <br>
+            <div class="radio">
+                <label>Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="male">Female</label>
+                </div>
+            </div>
+            <br>
+            <div class="input">
+                <label class ="textlabel"for="father-name">Father Name</label>
+                <input type="text" id="father-name" name="father-name" required>
+            </div>
+            <br>
+            <div class="input">
+                <label class ="textlabel" for="spouse-name">Spouse Name</label>
+                <input type="text" id="spouse-name" name="spouse-name" required>
+            </div>
+            <br>
+            <div class="input">
+                <label class ="textlabel" for="contact-no">Contact Number</label>
+                <input type="tel" id="contact-no" name="contact-no">
+            </div>
+            <br>
+            <div class="input">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <br>
+        <div class="input">
+        <table>
+                <tr>
+                    <td>Blood Group</td>
+                    <td><select name="vis_time" required>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                    </select></td>
+                </tr>
+            </table>
+            </div> 
+            <br>
+            <div>
+                <label class ="textlabel" for="visited-earlier">Visited earlier</label>
+                <input type="checkbox" id="visited-earlier" name="visited-earlier">
+            </div>
+            <div class="input">
+                <button type="submit" value="Submit" size="30">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
